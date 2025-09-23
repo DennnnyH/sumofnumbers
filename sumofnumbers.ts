@@ -7,7 +7,7 @@ should output 10. Check the output in the browser console.
 
 function sumFor(numArr: number[]): number {
   let total = 0;
-  for(let i = 0; i < numArr.length; i++){
+  for (let i = 0; i < numArr.length; i++) {
     total += numArr[i];
   }
   return total;
@@ -18,8 +18,8 @@ console.log(sumFor([1, 2, 3, 4]));
 function sumWhile(numArr: number[]): number {
   let total = 0;
   let i = 0;
-  
-  while(i < numArr.length){
+
+  while (i < numArr.length) {
     total += numArr[i];
     i++;
   }
@@ -29,7 +29,7 @@ function sumWhile(numArr: number[]): number {
 console.log(sumWhile([1, 2, 3, 4]));
 
 function sumRecursion(numArr: number[]): number {
-  if(numArr.length === 0) return 0;
+  if (numArr.length === 0) return 0;
   return numArr[0] + sumRecursion(numArr.slice(1));
 }
 
@@ -40,3 +40,4 @@ function sumTheFunctionalWay(numArr: number[]): number {
 }
 
 console.log(sumTheFunctionalWay([1, 2, 3, 4]));
+
